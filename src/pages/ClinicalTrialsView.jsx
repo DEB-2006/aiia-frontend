@@ -1,4 +1,4 @@
-import KpiCard from "../components/KpiCard";
+import kpicard from "../components/KpiCard";
 
 export default function ClinicalTrialsView({ 
   theme: t, 
