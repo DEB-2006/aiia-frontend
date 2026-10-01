@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import KpiCard from "../components/KpiCard";
+import kpicard from "../components/kpicard";
 import { apiFetch } from "../services/api";
 
 export default function DashboardView({ theme: t, darkMode, trials, setShowTrialForm, panelStyle }) {
@@ -43,25 +43,25 @@ export default function DashboardView({ theme: t, darkMode, trials, setShowTrial
 
       {/* KPI Cards section with live database values */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px", marginBottom: "25px" }}>
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Active Trials" 
           value={loadingKpis ? "..." : `${kpis.active_interventions || trials.length}`} 
           subtitle="Currently running" 
         />
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Total Participants" 
           value={loadingKpis ? "..." : `${kpis.total_patients_enrolled}`} 
           subtitle="Across all trials" 
         />
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Research Sites" 
           value="18" 
           subtitle="Across India" 
         />
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="GCP Compliance" 
           value={loadingKpis ? "..." : `${kpis.ctri_compliance_rate}%`} 

@@ -1,4 +1,4 @@
-import kpicard from "../components/KpiCard";
+import kpicard from "../components/kpicard";
 
 export default function ClinicalTrialsView({ 
   theme: t, 
@@ -30,25 +30,25 @@ export default function ClinicalTrialsView({
 
       {/* Analytics KPI Cards linked to backend */}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "20px", marginBottom: "25px" }}>
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Active Trials" 
           value={kpis?.active_trials ?? (trials.length > 0 ? `${trials.length}` : "0")} 
           subtitle="Currently running" 
         />
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Total Participants" 
           value={kpis?.total_patients ?? kpis?.total_participants ?? "1,286"} 
           subtitle="Across all trials" 
         />
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Recruiting" 
           value={kpis?.recruiting_trials ?? "8"} 
           subtitle="Trials recruiting" 
         />
-        <KpiCard 
+        <kpicard 
           theme={t} 
           title="Regulatory Due" 
           value={kpis?.regulatory_due ?? "3"} 

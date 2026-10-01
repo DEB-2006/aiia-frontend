@@ -1,4 +1,4 @@
-export default function KpiCard({ theme: t, title, value, subtitle }) {
+export default function kpicard({ theme: t, title, value, subtitle }) {
   return (
     <div style={{ background: t.panelBg, padding: "20px", borderRadius: "12px", border: `1px solid ${t.border}`, boxShadow: t.shadow, minWidth: 0 }}>
       <p style={{ color: t.textMuted, margin: 0 }}>{title}</p>
