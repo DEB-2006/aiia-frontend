@@ -1,11 +1,11 @@
 import { useState, useEffect, useCallback } from "react";
 import { apiFetch } from "./services/api";
 
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/sidebar";
 import Header from "./components/Header";
-import TrialModal from "./components/TrialModal";
+import TrialModal from "./components/Trialmodal";
 
-import AuthView from "./pages/AuthView";
+import AuthView from "./pages/Authview";
 import DashboardView from "./pages/DashboardView";
 import ClinicalTrialsView from "./pages/ClinicalTrialsView";
 import ParticipantsView from "./pages/ParticipantsView";
