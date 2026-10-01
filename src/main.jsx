@@ -33,7 +33,8 @@ function MainWrapper() {
           
           <form onSubmit={async (e) => {
             e.preventDefault();
-            const endpoint = isRegistering ? "/api/v1/auth/register" : "/api/v1/auth/login";
+            const BASE_URL = "https://aiia-backend-t0xe.onrender.com"; 
+            const endpoint = isRegistering ? `${BASE_URL}/api/v1/auth/register` : `${BASE_URL}/api/v1/auth/login`;
 
             try {
               let res, data;
