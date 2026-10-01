@@ -1,10 +1,13 @@
 # AIIA Clinical Trial Management System (CTMS) - Frontend
 
-The official frontend application for the **All India Institute of Ayurveda (AIIA) Clinical Trial Management System**, built using React, Vite, and modern JavaScript. It connects directly to the FastAPI backend to manage clinical trials, participants, traditional Ayurveda interventions, and ethics regulatory approvals.
+**🌐 Live Demo:** [Click here to view the live application](https://aiia-frontend-bbtp.vercel.app/)
+**⚙️ Backend Repository:** [View the FastAPI/Neon backend](https://aiia-backend-t0xe.onrender.com)
+
+The official frontend application for the **All India Institute of Ayurveda (AIIA) Clinical Trial Management System**, built using React, Vite, and modern JavaScript. It connects directly to a FastAPI backend and Neon PostgreSQL database to manage clinical trials, participants, traditional Ayurveda interventions, and ethics regulatory approvals.
 
 ## 🚀 Key Features
 
-* **Secure Authentication:** Complete authentication loop supporting User Login, Registration, and Password Recovery.
+* **Secure Authentication:** Complete authentication loop supporting User Login, Registration, and Password Recovery using JWT.
 * **Executive Dashboard:** Real-time KPI metrics and overview of ongoing clinical studies.
 * **Clinical Trial Management:** Track, list, and create new clinical trial records with CTRI registration details.
 * **Participant Tracking:** Patient management dashboard for monitoring trial enrollment and data.
@@ -14,9 +17,12 @@ The official frontend application for the **All India Institute of Ayurveda (AII
 
 ## 🛠️ Tech Stack
 
-* **Framework:** React 18 / Vite
-* **Styling:** Inline CSS with Dynamic Theme Management
-* **API Communication:** Fetch API wrapper (`apiFetch`) communicating with FastAPI backend endpoints
+* **Frontend:** React 18, Vite
+* **Backend Integration:** FastAPI, Render
+* **Database:** PostgreSQL (Neon)
+* **API Communication:** Fetch API wrapper (`apiFetch`) communicating with FastAPI endpoints
+* **Deployment:** Vercel (Frontend), Render (Backend)
+
 
 ## ⚙️ Getting Started Locally
 
